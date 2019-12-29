@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>io.github.jc776</groupId>
+    <artifactId>maven-example</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>jar</packaging>
+    <name>Example Maven Project</name>
+    <description>Deployed using Github Actions</description>
+
+    <distributionManagement>
+        <!--
+          Specify the repository that the package is listed under.
+          This can be skipped if the artifactId is the same as the repository name.
+          Testing this out as it's needed for multi-module projects.
+          see: https://stackoverflow.com/a/58021709
+        -->
+        <repository>
+          <id>github</id>
+          <name>GitHub jc776 Apache Maven Packages</name>
+          <url>https://maven.pkg.github.com/jc776/actions-deploy-example-maven</url>
+        </repository>
+    </distributionManagement>
+
+    <properties>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <maven.compiler.source>1.8</maven.compiler.source>
+    </properties>
+</project>
