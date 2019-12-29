@@ -16,13 +16,20 @@
           This can be skipped if the artifactId is the same as the repository name.
           Testing this out as it's needed for multi-module projects.
           see: https://stackoverflow.com/a/58021709
+          see: https://github.com/alexarchambault/test-gh-package-registry-2/blob/master/pom.xml
         -->
         <repository>
-          <id>github</id>
-          <name>GitHub jc776 Apache Maven Packages</name>
-          <url>https://maven.pkg.github.com/jc776/actions-deploy-example-maven</url>
+            <id>github</id>
+            <name>GitHub jc776 Apache Maven Packages</name>
+            <url>https://maven.pkg.github.com/jc776</url>
         </repository>
     </distributionManagement>
+    <scm>
+        <connection>scm:git:https://github.com/jc776/actions-deploy-example-maven.git</connection>
+        <developerConnection>scm:git:https://github.com/jc776/actions-deploy-example-maven.git</developerConnection>
+        <url>https://github.com/jc776/actions-deploy-example-maven</url>
+    </scm>
+
 
     <properties>
         <maven.compiler.target>1.8</maven.compiler.target>
