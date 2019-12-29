@@ -16,9 +16,6 @@ jobs:
       with:
         java-version: 1.8
 
-    - name: Build with Maven
-      run: mvn -B package
-
     - name: Publish to GitHub Packages
       run: mvn -B deploy
       env:
