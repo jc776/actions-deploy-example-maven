@@ -16,7 +16,7 @@
           This can be skipped if the artifactId is the same as the repository name.
           Testing this out as it's needed for multi-module projects.
           see: https://stackoverflow.com/a/58021709
-          see: https://github.com/Enfernuz/JavaTrans2Quik/blob/master/pom.xml
+          see: https://github.com/baloise/corellia/blob/master/pom.xml
         -->
         <repository>
             <id>github</id>
@@ -26,7 +26,8 @@
     </distributionManagement>
     <scm>
         <url>https://github.com/jc776/actions-deploy-example-maven</url>
-        <connection>scm:git:git@github.com:jc776/actions-deploy-example-maven.git</connection>
+        <connection>scm:git:https://github.com/jc776/actions-deploy-example-maven.git</connection>
+        <developerConnection>scm:git:https://github.com/jc776/actions-deploy-example-maven.git</developerConnection>
     </scm>
 
     <properties>
